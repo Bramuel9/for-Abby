@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="proposal.css">
+  <title>Will You Be My Valentine?</title>
+</head>
+<body>
+
+  <div class="card">
+    <h1 id="title">💘 Will you be my Valentine?</h1>
+    <p>Type your name first… I like personal things 😌</p>
+
+    <input
+      type="text"
+      class="name-input"
+      id="nameInput"
+      placeholder="Your name here 👀"
+      oninput="updateName()"
+    />
+
+    <div class="buttons">
+      <button class="yes" onclick="sayYes()">Yes 😍</button>
+      <button class="no" onmouseenter="moveNo()">No 🙃</button>
+    </div>
+
+    <div class="message" id="message">
+      Knew it, <span id="finalName">you</span> 😏💕
+      <div class="tease">Screenshot this and send it to me 😉</div>
+    </div>
+  </div>
+
+  <div class="hearts" id="hearts"></div>
+
+  <audio id="bgMusic" preload="auto">
+    <source src="music/love.mp3.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="proposal.js"></script>
+
+</body>
+</html>
