@@ -28,6 +28,13 @@
       noBtn.innerText = noTexts[Math.floor(Math.random() * noTexts.length)];
     }
 
+    function enableMusic() {
+      const music = document.getElementById("bgMusic");
+      music.volume = 0.6;
+      music.play();
+      music.pause(); 
+    }
+
     function sayYes() {
       message.style.display = 'block';
       const music = document.getElementById('bgMusic');
@@ -45,4 +52,5 @@
       heart.style.animationDuration = 3 + Math.random() * 2 + 's';
       hearts.appendChild(heart);
       setTimeout(() => heart.remove(), 5000);
+
     }
